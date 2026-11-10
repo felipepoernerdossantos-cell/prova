@@ -1,0 +1,84 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "nome": "Salário",
+            "tipo": "RECEITA"
+        },
+        {
+            "id": 2,
+            "nome": "Alimentação",
+            "tipo": "DESPESA"
+        },
+        {
+            "id": 3,
+            "nome": "Transporte",
+            "tipo": "DESPESA"
+        },
+        {
+            "id": 4,
+            "nome": "Academia",
+            "tipo": "DESPESA"
+        },
+        {
+            "id": 5,
+            "nome": "Cafeteria",
+            "tipo": "DESPESA"
+        },
+        {
+            "id": 6,
+            "nome": "loja",
+            "tipo": "DESPESA"
+        }
+    ],
+    "lancamentos": [
+        {
+            "id": 1,
+            "descricao": "Salário principal",
+            "valor": 5000,
+            "data": "2026-11-10",
+            "tipo": "RECEITA",
+            "categoriaId": 1
+        },
+        {
+            "id": 2,
+            "descricao": "Mercado",
+            "valor": 250.75,
+            "data": "2026-11-12",
+            "tipo": "DESPESA",
+            "categoriaId": 2
+        },
+        {
+            "id": 3,
+            "descricao": "Combustível",
+            "valor": 180.5,
+            "data": "2026-11-15",
+            "tipo": "DESPESA",
+            "categoriaId": 3
+        },
+        {
+            "id": 4,
+            "descricao": "Mensalidade da academia",
+            "valor": 120,
+            "data": "2026-11-20",
+            "tipo": "DESPESA",
+            "categoriaId": 4
+        },
+        {
+            "id": 5,
+            "descricao": "Café da manhã",
+            "valor": 35,
+            "data": "2026-11-22",
+            "tipo": "DESPESA",
+            "categoriaId": 5
+        },
+        {
+            "id": 6,
+            "descricao": "Café da manhã",
+            "valor": 35,
+            "data": "2026-11-22",
+            "tipo": "DESPESA",
+            "categoriaId": 5
+        }
+    ]
+}

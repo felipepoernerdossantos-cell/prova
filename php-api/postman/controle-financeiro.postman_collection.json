@@ -1,0 +1,101 @@
+{
+  "info": {
+    "name": "Controle Financeiro API",
+    "description": "Collection para testar a API em PHP no Postman",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Listar categorias",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/categorias",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "categorias"]
+        }
+      }
+    },
+    {
+      "name": "Criar categoria",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"nome\": \"Transporte\",\n  \"tipo\": \"DESPESA\"\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/categorias",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "categorias"]
+        }
+      }
+    },
+    {
+      "name": "Listar lançamentos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/lancamentos",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "lancamentos"]
+        }
+      }
+    },
+    {
+      "name": "Criar lançamento",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"descricao\": \"Combustível\",\n  \"valor\": 180.50,\n  \"data\": \"2026-11-15\",\n  \"tipo\": \"DESPESA\",\n  \"categoriaId\": 3\n}"
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/lancamentos",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "lancamentos"]
+        }
+      }
+    },
+    {
+      "name": "Resumo financeiro",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:8000/api/resumo?dataInicio=2026-11-01&dataFim=2026-11-30",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "8000",
+          "path": ["api", "resumo"],
+          "query": [
+            { "key": "dataInicio", "value": "2026-11-01" },
+            { "key": "dataFim", "value": "2026-11-30" }
+          ]
+        }
+      }
+    }
+  ]
+}
